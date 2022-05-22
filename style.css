@@ -32,9 +32,7 @@ main {
   background-color: yellow;
 }
 
-.box-item:nth-child(3),
-.box-item:nth-child(6),
-.box-item:last-child {
+.box-item:nth-child(3n) {
   margin-right: 0;
 }
 
