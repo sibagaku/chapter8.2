@@ -3,3 +3,49 @@
   padding:0;
   box-sizing: border-box;
 }
+
+main {
+  width: 960px;
+  margin:50px auto;
+}
+
+.list {
+  padding:20px;
+  list-style: none;
+
+}
+
+.list:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.box {
+  display: flex;
+  flex-wrap:wrap;
+  margin-top: 50px;
+}
+
+.box-item {
+  height: 200px;
+  width: 30%;
+  margin:0 5% 40px 0;
+  background-color: yellow;
+}
+
+.box-item:nth-child(3),
+.box-item:nth-child(6),
+.box-item:last-child {
+  margin-right: 0;
+}
+
+.box-item:nth-child(7),
+.box-item:nth-child(8),
+.box-item:last-child {
+  margin-bottom: 0;
+}
+
+.box-item:first-child,
+.box-item:nth-child(5),
+.box-item:last-child {
+  background-color: orange;
+}
